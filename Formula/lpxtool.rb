@@ -3,8 +3,8 @@ class Lpxtool < Formula
 
   desc "Read-only Logic Pro project inspector — plug-ins, tracks, and metadata"
   homepage "https://github.com/rhydlewis/lpx-toolkit"
-  url "https://files.pythonhosted.org/packages/af/a9/b66d3bc6d1ed38a844d292b7e66281c303817bc268c38e3bd41a43566aa8/lpx_toolkit-0.1.2.tar.gz"
-  sha256 "046239b839c637e89cfd663c2710b52e8e29fed0130f5177e69045fda44d7276"
+  url "https://files.pythonhosted.org/packages/b8/be/f4d89ac7c1f398bb15f2506a9740287e560a666431f48180e90adde3fa51/lpx_toolkit-0.2.0.tar.gz"
+  sha256 "0bc00d1538b7330cf4a80981d3c4b0c1b96044b0fe72209db3e7e0df754874a2"
   license "MIT"
 
   depends_on "python@3.13"
@@ -14,7 +14,7 @@ class Lpxtool < Formula
   end
 
   test do
-    assert_match "lpx-inspect 0.1.2", shell_output("#{bin}/lpx-toolkit --version")
-    assert_match "lpx-inspect 0.1.2", shell_output("#{bin}/lpxtool --version")
+    assert_match "lpx-inspect 0.2.0", shell_output("#{bin}/lpx-toolkit --version")
+    assert_match "lpx-inspect 0.2.0", shell_output("#{bin}/lpxtool --version")
   end
 end
